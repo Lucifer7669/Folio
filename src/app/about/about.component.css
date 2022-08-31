@@ -1,0 +1,136 @@
+
+.section-title {
+    margin-top: 135px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+
+.section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: greenyellow;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+
+.about {
+    transition: all 0.8s ease;
+    margin-top: -13px;
+}
+
+.about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: greenyellow;
+    margin-top: 38px;
+}
+
+.about .content .fst-italic {
+    font-size: 15px;
+    color: whitesmoke;
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+.about .img-fluid {
+    width: 260px;
+    height: 260px;
+    margin-left: 70px;
+    margin-top: 45px;
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 16px;
+}
+
+.about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.about .content ul strong {
+    margin-right: 10px;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.about .content ul span {
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: greenyellow;
+    line-height: 0;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.about a{
+    margin-left: 45%;
+    margin-bottom: 70px;
+    margin-top: 12px;
+}
+
+.about a:hover{
+    background-color: green;
+    color: lavenderblush;
+}
+
+@media(max-width:510px){
+    .about a{
+        margin-left: 38%;
+    }
+
+    .about .img-fluid{
+        margin-left: 103px;
+    }
+    .about .fst-italic{
+        text-align: center;
+    }
+    .about .content h3{
+        text-align: center;
+    }
+}

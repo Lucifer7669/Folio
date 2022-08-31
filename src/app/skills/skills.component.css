@@ -1,0 +1,89 @@
+
+.skills .progress {
+    display: block;
+    border-radius: 10px;
+    height: 60px;
+    background: none;
+    margin-left: -5px;
+    width: 100%;
+}
+
+.skills .skills-content {
+    margin-left: 20px;
+}
+
+.skills .progress .skill {
+    padding: 10px 10px;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background-color: black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.skills .progress-bar1 {
+    width: 70%;
+    height: 10px;
+    transition: 0.9s;
+    background-color: greenyellow;
+}
+
+.skills .progress-bar2 {
+    width: 70%;
+    height: 10px;
+    transition: 0.9s;
+    background-color: greenyellow;
+}
+
+.skills .progress-bar3 {
+    width: 40%;
+    height: 10px;
+    transition: 0.9s;
+    background-color: greenyellow;
+}
+
+.skills .progress-bar4 {
+    width: 70%;
+    height: 10px;
+    transition: 0.9s;
+    background-color: greenyellow;
+}
+
+.skills .progress-bar5 {
+    width: 50%;
+    height: 10px;
+    transition: 0.9s;
+    background-color: greenyellow;
+}
+
+.skills .progress-bar6 {
+    width: 40%;
+    height: 10px;
+    transition: 0.9s;
+    background-color: greenyellow;
+}
+
+@media (max-width: 400px){
+    .skills .progress {
+        
+        width: 293px;
+        overflow-x: hidden;
+    }
+
+    .skills{
+        margin-top: 0px;
+    }
+}

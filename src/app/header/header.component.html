@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<nav class="navbar navbar-expand-md fade-in-text">
+  <h1 class="logo">vedant</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <i class="bx bx-menu-alt-left"></i>
+  </button> 
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a routerLink="/home" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="about" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><span>About</span></a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/skills" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Skills</span></a>
+        </li> 
+        <li class="nav-item">
+          <a routerLink="/resume" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Resume</span></a>
+        </li>  
+        <li class="nav-item">
+          <a routerLink="/service" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Services</span></a>
+        </li>  
+        <li class="nav-item">
+          <a routerLink="/contact" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show"><span>Contact</span></a>
+        </li>  
+      
+      </ul>
+    </div>  
+</nav>
+
+<router-outlet></router-outlet>
+
+
+

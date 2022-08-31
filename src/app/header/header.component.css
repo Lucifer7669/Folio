@@ -1,0 +1,87 @@
+.navbar ul a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 7px 20px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar ul{
+  margin-left: 51%;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+
+}
+
+.navbar ul a:hover{
+  color: greenyellow;
+  transition: 0.2s;
+  
+
+}
+
+.navbar ul a span:hover{
+  color: greenyellow;
+}
+
+.navbar-toggler {
+background-color: greenyellow;
+border-radius: 50px;
+margin-left: 90%;
+margin-top: -50px;
+}
+
+
+
+.navbar a:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 6px;
+  bottom: -4px;
+  left: 0;
+  background-color: greenyellow;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar.active > a:before {
+  visibility: visible;  
+  width: 25px;
+}
+
+.navbar a:hover, .navbar .active > a, .navbar li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1{
+  color: greenyellow;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+h1:hover{
+  color: whitesmoke;
+  cursor:pointer;
+}
+
+@media(max-width:510px){
+  .navbar .logo{
+  font-size: 25px;
+    margin-top: 2px;
+  }
+
+  
+}
+  
