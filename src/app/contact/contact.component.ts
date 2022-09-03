@@ -46,13 +46,12 @@ export class ContactComponent implements OnInit {
   }
 
   public Onsubmit() {
-    console.log(this.contactusForm.value);
     this.userDetails.name = this.contactusForm.value.name;
     this.userDetails.email = this.contactusForm.value.email;
     this.userDetails.address = this.contactusForm.value.address;
     this.userDetails.number = this.contactusForm.value.number;
 
     this.contactUsService.sendData(this.userDetails);
-    console.log(this.userDetails);
+    window.alert('Your Responce Has Been Submitted Successfully');
   }
 }
