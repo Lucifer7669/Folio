@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { environment } from 'src/environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
     ReactiveFormsModule,
     HttpClientModule,
     AngularFirestoreModule,
-    AngularFireModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
   ],
   providers: [],
